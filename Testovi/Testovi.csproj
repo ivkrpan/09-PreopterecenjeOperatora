@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestInkrementa.cs" />
+    <Compile Include="TestKonstruktoraPretvorbe.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Inkrement\Inkrement.csproj">
