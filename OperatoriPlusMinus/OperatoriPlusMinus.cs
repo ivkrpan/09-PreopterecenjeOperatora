@@ -35,15 +35,28 @@ namespace Vsite.CSharp
 
         public static KompleksniBroj operator +(KompleksniBroj br1, KompleksniBroj br2)
         {
-            // TODO: implementirati binarni operator + (za zbrajanje dva kompleksna broja) i provjeriti ispis pri izvođenju programa
-            throw new NotImplementedException();
+            // implementirati binarni operator + (za zbrajanje dva kompleksna broja) i provjeriti ispis pri izvođenju programa
+            return new KompleksniBroj(br1.RealniDio + br2.RealniDio, br1.ImaginarniDio + br2.ImaginarniDio);
+           // throw new NotImplementedException();
         }
 
         // TODO: Implementirati binarni operator - (za oduzimanje dva kompleksna broja)
-        
+        public static KompleksniBroj operator -(KompleksniBroj br1, KompleksniBroj br2)
+        {
+           
+            return new KompleksniBroj(br1.RealniDio - br2.RealniDio, br1.ImaginarniDio - br2.ImaginarniDio);
+           // throw new NotImplementedException();
+        }
         // TODO: Implementirati preopterećeni unarni operator - (za promjenu predznaka)
 
+        public static KompleksniBroj operator -(KompleksniBroj br1)
+        {
+            // implementirati binarni operator + (za zbrajanje dva kompleksna broja) i provjeriti ispis pri izvođenju programa
+            return new KompleksniBroj(br1.RealniDio, br1.ImaginarniDio);
+           // throw new NotImplementedException();
+        }
         // TODO: Otkomentirati naredbu koja ga poziva u Main te provjeriti ispis pri izvođenju programa
+
 
     }
 
